@@ -1,0 +1,48 @@
+{
+  "name": "portfolio_web_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -f -r dist",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p",
+    "start": "webpack-dev-server --open --hot --mode development",
+    "analyze": "webpack -p --env.analyze"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asindeton/portfolio_web_design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asindeton/portfolio_web_design/issues"
+  },
+  "homepage": "https://github.com/Asindeton/portfolio_web_design#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "htmlhint": "^0.14.1",
+    "img-loader": "^3.0.1",
+    "prettier": "2.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4"
+  }
+}
